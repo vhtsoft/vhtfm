@@ -1,13 +1,13 @@
 import './index.css'
 
 import { createApp } from 'vue'
-import { VhtfmUI, setConfig, vhtfmRequest } from 'frappe-ui'
+import { VhtfmUI, setConfig, frappeRequest } from 'frappe-ui'
 import router from './router'
 import App from './App.vue'
 
 let app = createApp(App)
 
-setConfig('resourceFetcher', vhtfmRequest)
+setConfig('resourceFetcher', frappeRequest)
 app.use(VhtfmUI)
 app.use(router)
 

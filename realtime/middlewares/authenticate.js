@@ -31,7 +31,7 @@ function authenticate_with_vhtfm(socket, next) {
 	socket.sid = cookies.sid;
 	socket.authorization_header = authorization_header;
 
-	socket.vhtfm_request = (path, args = {}, opts = {}) => {
+	socket.frappe_request = (path, args = {}, opts = {}) => {
 		let query_args = new URLSearchParams(args);
 		if (query_args.toString()) {
 			path = path + "?" + query_args.toString();
@@ -51,7 +51,7 @@ function authenticate_with_vhtfm(socket, next) {
 	};
 
 	socket
-		.vhtfm_request("/api/method/vhtfm.realtime.get_user_info")
+		.frappe_request("/api/method/vhtfm.realtime.get_user_info")
 		.then((res) => res.json())
 		.then(({ message }) => {
 			socket.user = message.user;

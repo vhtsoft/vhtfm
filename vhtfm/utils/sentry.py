@@ -77,7 +77,7 @@ def set_scope(scope):
 	scope.set_user({"id": vhtfm.local.site})
 	user = getattr(vhtfm.session, "user", "Unidentified")
 	scope.set_tag("vhtfm_user", user)
-	# Extract `X-Vhtfm-Request-ID` to store as a separate field if its present
+	# Extract `X-Frappe-Request-ID` to store as a separate field if its present
 	if trace_id := vhtfm.monitor.get_trace_id():
 		scope.set_tag("vhtfm_trace_id", trace_id)
 

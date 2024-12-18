@@ -1,4 +1,4 @@
-import { Dialog, ErrorMessage } from 'vhtfm-ui'
+import { Dialog, ErrorMessage } from 'frappe-ui'
 import { reactive, ref, h } from 'vue'
 
 let dialogs = ref([])

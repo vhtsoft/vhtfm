@@ -18,7 +18,7 @@
 </template>
 <script setup>
 import PrepaidCreditsForm from './PrepaidCreditsForm.vue'
-import { Dialog, FeatherIcon } from 'vhtfm-ui'
+import { Dialog, FeatherIcon } from 'frappe-ui'
 
 const props = defineProps({
 	showMessage: {

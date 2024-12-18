@@ -13,7 +13,7 @@
 	</div>
 </template>
 <script setup>
-import { Button, FeatherIcon } from 'vhtfm-ui'
+import { Button, FeatherIcon } from 'frappe-ui'
 const props = defineProps({
 	label: String,
 	active: Boolean,

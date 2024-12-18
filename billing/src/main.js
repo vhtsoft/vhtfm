@@ -1,7 +1,7 @@
 import './index.css'
 
 import { createApp } from 'vue'
-import { VhtfmUI, setConfig, vhtfmRequest } from 'vhtfm-ui'
+import { VhtfmUI, setConfig, vhtfmRequest } from 'frappe-ui'
 import router from './router'
 import App from './App.vue'
 

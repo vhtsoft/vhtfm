@@ -26,7 +26,7 @@
 </template>
 <script setup>
 import AddressForm from './AddressForm.vue'
-import { FormControl, ErrorMessage, Button, createResource } from 'vhtfm-ui'
+import { FormControl, ErrorMessage, Button, createResource } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 
 const emit = defineEmits(['success'])

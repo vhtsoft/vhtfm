@@ -33,7 +33,7 @@
 	</div>
 </template>
 <script setup>
-import { FormControl, ErrorMessage, createResource, toast } from 'vhtfm-ui'
+import { FormControl, ErrorMessage, createResource, toast } from 'frappe-ui'
 import { ref, computed, inject, watch } from 'vue'
 
 const emit = defineEmits(['success'])

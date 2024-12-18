@@ -17,7 +17,7 @@ import PageNotFound from './pages/PageNotFound.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
 import { Dialogs } from '@/dialogs.js'
 import { getSession } from '@/session.js'
-import { Toasts, createResource } from 'vhtfm-ui'
+import { Toasts, createResource } from 'frappe-ui'
 import { provide } from 'vue'
 
 const { isFCSite, user } = getSession()

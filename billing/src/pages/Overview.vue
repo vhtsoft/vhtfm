@@ -13,7 +13,7 @@
 <script setup>
 import CurrentPlan from '@/components/CurrentPlan.vue'
 import PaymentDetails from '@/components/PaymentDetails.vue'
-import { Spinner, createResource, Breadcrumbs } from 'frappe-ui'
+import { Spinner, createResource, Breadcrumbs } from 'vhtfm-ui'
 import { useRouter } from 'vue-router'
 import { computed, provide, inject } from 'vue'
 
@@ -22,7 +22,7 @@ const router = useRouter()
 const team = inject('team')
 
 const upcomingInvoice = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.upcoming_invoice' },
 	cache: 'upcomingInvoice',
 	auto: true,

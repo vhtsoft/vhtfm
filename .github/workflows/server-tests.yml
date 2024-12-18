@@ -2,7 +2,7 @@ name: Server
 
 on:
   repository_dispatch:
-    types: [frappe-framework-change]
+    types: [vhtfm-framework-change]
   pull_request:
   workflow_dispatch:
   schedule:
@@ -56,7 +56,7 @@ jobs:
     needs: checkrun
     uses: ./.github/workflows/_base-migration.yml
     with:
-      db-artifact-url: https://frappeframework.com/files/v13-frappe.sql.gz
+      db-artifact-url: https://vhtfmframework.com/files/v13-vhtfm.sql.gz
       python-version: '3.10'
       node-version: 20
       fake-success: ${{ needs.checkrun.outputs.build != 'strawberry' }}
@@ -88,14 +88,14 @@ jobs:
     strategy:
       matrix:
         repo:
-          - frappe/erpnext
-          - frappe/lending
-          - frappe/hrms
+          - vhtfm/erpnext
+          - vhtfm/lending
+          - vhtfm/hrms
     steps:
       - name: Dispatch Downstream CI (if supported)
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.CI_PAT }}
           repository: ${{ matrix.repo }}
-          event-type: frappe-framework-change
-          client-payload: '{"frappe_sha": "${{ github.sha }}"}'
+          event-type: vhtfm-framework-change
+          client-payload: '{"vhtfm_sha": "${{ github.sha }}"}'

@@ -7,7 +7,7 @@
 		<li v-if="plan.support_included">Support Included</li>
 		<li v-if="plan.database_access">Database Access</li>
 		<li v-if="plan.offsite_backups">Offsite Backups</li>
-		<li v-if="plan.private_benches">Private Benches</li>
+		<li v-if="plan.private_foxes">Private Foxes</li>
 		<li v-if="plan.monitor_access">Advanced Monitoring</li>
 	</ul>
 </template>

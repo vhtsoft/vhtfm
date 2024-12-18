@@ -39,7 +39,7 @@
 	</div>
 </template>
 <script setup>
-import { Button, ErrorMessage, Spinner, createResource, toast } from 'frappe-ui'
+import { Button, ErrorMessage, Spinner, createResource, toast } from 'vhtfm-ui'
 import { loadStripe } from '@stripe/stripe-js'
 import { ref, nextTick, inject } from 'vue'
 
@@ -72,7 +72,7 @@ const ready = ref(false)
 const cardElementRef = ref(null)
 
 const createPaymentIntent = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: {
 		method: 'billing.create_payment_intent_for_buying_credits',
 		data: { amount: props.amount },

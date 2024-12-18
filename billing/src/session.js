@@ -1,4 +1,4 @@
-import { createResource } from 'frappe-ui'
+import { createResource } from 'vhtfm-ui'
 import router from '@/router'
 import { ref, computed } from 'vue'
 
@@ -22,7 +22,7 @@ export function getSession() {
 	}
 
 	const isFCSite = createResource({
-		url: 'frappe.integrations.frappe_providers.frappecloud_billing.is_fc_site',
+		url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.is_fc_site',
 		cache: 'isFCSite',
 		auto: true,
 		transform: (data) => Boolean(data),

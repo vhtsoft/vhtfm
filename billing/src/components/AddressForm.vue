@@ -33,7 +33,7 @@
 	</div>
 </template>
 <script setup>
-import { FormControl, ErrorMessage, createResource, toast } from 'frappe-ui'
+import { FormControl, ErrorMessage, createResource, toast } from 'vhtfm-ui'
 import { ref, computed, inject, watch } from 'vue'
 
 const emit = defineEmits(['success'])
@@ -42,7 +42,7 @@ const team = inject('team')
 const billingInformation = defineModel()
 
 const updateBillingInformation = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	makeParams: () => {
 		return {
 			method: 'billing.update_information',
@@ -130,7 +130,7 @@ const _indianStates = [
 ]
 
 const _countryList = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.country_list' },
 	cache: 'countryList',
 	auto: true,
@@ -228,7 +228,7 @@ function getInputType(field) {
 }
 
 const _validateGST = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	makeParams() {
 		return {
 			method: 'billing.validate_gst',

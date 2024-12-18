@@ -62,7 +62,7 @@ import CardForm from '@/components/CardForm.vue'
 import PrepaidCreditsForm from '@/components/PrepaidCreditsForm.vue'
 import { createDialog } from '@/dialogs'
 import { ConfirmMessage } from '@/utils'
-import { Dialog, Button, FeatherIcon, TabButtons, createResource } from 'frappe-ui'
+import { Dialog, Button, FeatherIcon, TabButtons, createResource } from 'vhtfm-ui'
 import { ref, computed, inject, markRaw, h } from 'vue'
 
 const props = defineProps({
@@ -104,7 +104,7 @@ const paymentModes = [
 function updateMode() {
 	show.value = false
 	createResource({
-		url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+		url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 		params: {
 			method: 'billing.change_payment_mode',
 			data: { mode: activeTab.value },
@@ -132,7 +132,7 @@ function upgradePlan() {
 
 function changePlanRequest(close) {
 	createResource({
-		url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+		url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 		params: { method: 'site.change_plan', data: { plan: props.plan.name } },
 		auto: true,
 		onSuccess: () => {

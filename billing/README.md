@@ -1,8 +1,8 @@
-# Frappe Cloud Billing
+# Vhtfm Cloud Billing
 
-Billing page is built to manage the billing of both desk based (ERPNext, HRMS) and portal based apps (Frappe CRM, Insights, Gameplan, Builder etc.)
+Billing page is built to manage the billing of both desk based (ERPNext, HRMS) and portal based apps (Vhtfm CRM, Insights, Gameplan, Builder etc.)
 
-> Billing page is only built for sites hosted on Frappe Cloud.
+> Billing page is only built for sites hosted on Vhtfm Cloud.
 
 ## Features
 

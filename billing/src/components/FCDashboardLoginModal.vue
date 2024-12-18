@@ -2,7 +2,7 @@
 	<Dialog
 		v-model="show"
 		:options="{
-			title: loginLink ? 'Login successful!' : 'Login to Frappe Cloud Dashboard',
+			title: loginLink ? 'Login successful!' : 'Login to Vhtfm Cloud Dashboard',
 		}"
 	>
 		<template #body-content>
@@ -21,7 +21,7 @@
 					<ErrorMessage v-if="verifyAndLogin.error" :message="verifyAndLogin.error" />
 				</div>
 				<div v-else-if="loginLink">
-					<p>You will be redirected to the Frappe Cloud Dashboard</p>
+					<p>You will be redirected to the Vhtfm Cloud Dashboard</p>
 					<p>
 						If you haven't been redirected,
 						<a class="underline" :href="loginLink" target="_blank">
@@ -67,7 +67,7 @@
 </template>
 
 <script setup>
-import { Button, Dialog, FormControl, ErrorMessage, createResource } from 'frappe-ui'
+import { Button, Dialog, FormControl, ErrorMessage, createResource } from 'vhtfm-ui'
 import { ref, computed, inject } from 'vue'
 
 const show = defineModel()
@@ -87,7 +87,7 @@ const verification_code = ref('')
 const verificationCodeSent = ref(false)
 
 const sendVerificationCode = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.send_verification_code',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.send_verification_code',
 	onSuccess: () => {
 		verificationCodeSent.value = true
 	},
@@ -96,7 +96,7 @@ const sendVerificationCode = createResource({
 const loginLink = ref(null)
 
 const verifyAndLogin = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.verify_and_login',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.verify_and_login',
 	makeParams: () => {
 		return { verification_code: verification_code.value }
 	},

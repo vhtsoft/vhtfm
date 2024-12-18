@@ -7,8 +7,8 @@
 *.egg-info
 dist/
 # build/
-frappe/docs/current
-frappe/public/dist
+vhtfm/docs/current
+vhtfm/public/dist
 .vscode
 .vs
 node_modules
@@ -199,7 +199,7 @@ cypress/videos
 # Aider AI Chat
 .aider*
 
-# frappecloud billing
+# vhtfmcloud billing
 billing/node_modules
-frappe/public/billing
-frappe/www/billing.html
+vhtfm/public/billing
+vhtfm/www/billing.html

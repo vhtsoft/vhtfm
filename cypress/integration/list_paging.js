@@ -4,9 +4,9 @@ context("List Paging", () => {
 		cy.visit("/app/website");
 		return cy
 			.window()
-			.its("frappe")
-			.then((frappe) => {
-				return frappe.call("frappe.tests.ui_test_helpers.create_multiple_todo_records");
+			.its("vhtfm")
+			.then((vhtfm) => {
+				return vhtfm.call("vhtfm.tests.ui_test_helpers.create_multiple_todo_records");
 			});
 	});
 

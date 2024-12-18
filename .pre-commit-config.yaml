@@ -8,7 +8,7 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
-        files: "frappe.*"
+        files: "vhtfm.*"
         exclude: ".*json$|.*txt$|.*csv|.*md|.*svg"
       - id: no-commit-to-branch
         args: ['--branch', 'develop']
@@ -18,7 +18,7 @@ repos:
       - id: check-toml
       - id: check-yaml
       - id: debug-statements
-        exclude: ^frappe/tests/classes/context_managers\.py$
+        exclude: ^vhtfm/tests/classes/context_managers\.py$
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.8.1
@@ -41,13 +41,13 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                frappe/public/dist/.*|
+                vhtfm/public/dist/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                frappe/www/website_script.js|
-                frappe/templates/includes/.*|
-                frappe/public/js/lib/.*|
-                frappe/website/doctype/website_theme/website_theme_template.scss
+                vhtfm/www/website_script.js|
+                vhtfm/templates/includes/.*|
+                vhtfm/public/js/lib/.*|
+                vhtfm/website/doctype/website_theme/website_theme_template.scss
             )$
 
 
@@ -60,13 +60,13 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                frappe/public/dist/.*|
+                vhtfm/public/dist/.*|
                 cypress/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                frappe/www/website_script.js|
-                frappe/templates/includes/.*|
-                frappe/public/js/lib/.*
+                vhtfm/www/website_script.js|
+                vhtfm/templates/includes/.*|
+                vhtfm/public/js/lib/.*
             )$
 
 ci:

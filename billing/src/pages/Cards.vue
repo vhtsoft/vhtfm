@@ -93,7 +93,7 @@ import {
 	FeatherIcon,
 	createResource,
 	Breadcrumbs,
-} from 'frappe-ui'
+} from 'vhtfm-ui'
 import { useTimeAgo } from '@vueuse/core'
 import { createDialog } from '@/dialogs.js'
 import { cardBrandIcon } from '@/utils'
@@ -102,7 +102,7 @@ import { ref, computed } from 'vue'
 const showAddCardModal = ref(false)
 
 const cards = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.get_payment_methods' },
 	cache: 'cards',
 	auto: true,
@@ -204,7 +204,7 @@ const rows = computed(() => {
 
 const setAsDefault = (card) => {
 	createResource({
-		url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+		url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 		params: { method: 'billing.set_as_default', data: { name: card } },
 		auto: true,
 		onSuccess: () => {
@@ -224,7 +224,7 @@ const removeCard = (card) => {
 				theme: 'red',
 				onClick: (close) => {
 					createResource({
-						url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+						url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 						params: {
 							method: 'billing.remove_payment_method',
 							data: { name: card },

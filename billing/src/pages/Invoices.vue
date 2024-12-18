@@ -66,13 +66,13 @@ import {
 	Badge,
 	createResource,
 	Breadcrumbs,
-} from 'frappe-ui'
+} from 'vhtfm-ui'
 import { computed, inject } from 'vue'
 
 const team = inject('team')
 
 const invoices = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.get_invoices' },
 	cache: 'invoices',
 	auto: true,
@@ -170,7 +170,7 @@ function payNow(invoice) {
 		window.open(invoice.stripe_invoice_url, '_blank')
 	} else {
 		createResource({
-			url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+			url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 			params: {
 				method: 'billing.get_stripe_payment_url_for_invoice',
 				data: { name: invoice.name },
@@ -183,7 +183,7 @@ function payNow(invoice) {
 
 function downloadInvoice(invoice) {
 	createResource({
-		url: 'frappe.integrations.frappe_providers.frappecloud_billing.get_token_and_base_url',
+		url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.get_token_and_base_url',
 		auto: true,
 		onSuccess: (data) => {
 			fetch(`${data.base_url}/api/method/press.saas.api.billing.download_invoice`, {

@@ -40,21 +40,21 @@ flags:
 
 profiling:
    critical_files_paths:
-      - /frappe/api.py
-      - /frappe/app.py
-      - /frappe/auth.py
-      - /frappe/boot.py
-      - /frappe/client.py
-      - /frappe/handler.py
-      - /frappe/migrate.py
-      - /frappe/sessions.py
-      - /frappe/utils/*
-      - /frappe/desk/reportview.py
-      - /frappe/desk/form/*
-      - /frappe/model/*
-      - /frappe/core/doctype/doctype/*
-      - /frappe/core/doctype/data_import/*
-      - /frappe/core/doctype/user/*
-      - /frappe/core/doctype/user/*
-      - /frappe/query_builder/*
-      - /frappe/database/*
+      - /vhtfm/api.py
+      - /vhtfm/app.py
+      - /vhtfm/auth.py
+      - /vhtfm/boot.py
+      - /vhtfm/client.py
+      - /vhtfm/handler.py
+      - /vhtfm/migrate.py
+      - /vhtfm/sessions.py
+      - /vhtfm/utils/*
+      - /vhtfm/desk/reportview.py
+      - /vhtfm/desk/form/*
+      - /vhtfm/model/*
+      - /vhtfm/core/doctype/doctype/*
+      - /vhtfm/core/doctype/data_import/*
+      - /vhtfm/core/doctype/user/*
+      - /vhtfm/core/doctype/user/*
+      - /vhtfm/query_builder/*
+      - /vhtfm/database/*

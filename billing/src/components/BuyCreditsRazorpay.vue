@@ -34,7 +34,7 @@
 	</div>
 </template>
 <script setup>
-import { Button, ErrorMessage, FeatherIcon, createResource, toast } from 'frappe-ui'
+import { Button, ErrorMessage, FeatherIcon, createResource, toast } from 'vhtfm-ui'
 import { ref, onMounted, onBeforeUnmount, inject } from 'vue'
 
 const props = defineProps({
@@ -68,7 +68,7 @@ onBeforeUnmount(() => {
 })
 
 const createRazorpayOrder = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: {
 		method: 'billing.create_razorpay_order',
 		data: { amount: props.amount },
@@ -82,7 +82,7 @@ const createRazorpayOrder = createResource({
 })
 
 const handlePaymentFailed = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.handle_razorpay_payment_failed' },
 	onSuccess: () => {
 		console.log('Payment Failed.')
@@ -93,8 +93,8 @@ function processOrder(data) {
 	const options = {
 		key: data.key_id,
 		order_id: data.order_id,
-		name: 'Frappe Cloud',
-		image: 'https://frappe.io/files/cloud.png',
+		name: 'Vhtfm Cloud',
+		image: 'https://vhtfm.io/files/cloud.png',
 		prefill: { email: team.data?.user },
 		handler: handlePaymentSuccess,
 		theme: { color: '#171717' },

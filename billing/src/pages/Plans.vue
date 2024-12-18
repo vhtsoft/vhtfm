@@ -84,7 +84,7 @@ import {
 	Tooltip,
 	createResource,
 	Breadcrumbs,
-} from 'frappe-ui'
+} from 'vhtfm-ui'
 import { createDialog } from '@/dialogs'
 import { parseSize, ConfirmMessage } from '@/utils'
 import { ref, computed, provide, inject, markRaw, h } from 'vue'
@@ -95,14 +95,14 @@ const team = inject('team')
 const currentSiteInfo = inject('currentSiteInfo')
 
 const billingDetails = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.get_information' },
 	cache: 'billingDetails',
 	auto: true,
 })
 
 const plans = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'site.get_plans' },
 	cache: 'plans',
 	auto: true,
@@ -217,7 +217,7 @@ function changePlan(_plan, price) {
 
 function changePlanRequest(planName, close) {
 	createResource({
-		url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+		url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 		params: { method: 'site.change_plan', data: { plan: planName } },
 		auto: true,
 		onSuccess: () => {

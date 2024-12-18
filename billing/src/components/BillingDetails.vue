@@ -26,7 +26,7 @@
 </template>
 <script setup>
 import AddressForm from './AddressForm.vue'
-import { FormControl, ErrorMessage, Button, createResource } from 'frappe-ui'
+import { FormControl, ErrorMessage, Button, createResource } from 'vhtfm-ui'
 import { reactive, ref } from 'vue'
 
 const emit = defineEmits(['success'])
@@ -44,7 +44,7 @@ const billingInformation = reactive({
 })
 
 createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.get_information' },
 	auto: true,
 	onSuccess: (data) => {

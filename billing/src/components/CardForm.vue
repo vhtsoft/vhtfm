@@ -81,7 +81,7 @@ import {
 	ErrorMessage,
 	createResource,
 	toast,
-} from 'frappe-ui'
+} from 'vhtfm-ui'
 import { currency } from '../utils.js'
 import { loadStripe } from '@stripe/stripe-js'
 import { ref, reactive, computed, inject, onMounted } from 'vue'
@@ -107,7 +107,7 @@ onMounted(() => setupStripeIntent())
 const cardElementRef = ref(null)
 
 const getPublishedKeyAndSetupIntent = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.get_publishable_key_and_setup_intent' },
 	onSuccess: async (data) => {
 		const { publishable_key, setup_intent } = data
@@ -163,7 +163,7 @@ const getPublishedKeyAndSetupIntent = createResource({
 })
 
 const countryList = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.country_list' },
 	cache: 'countryList',
 	auto: true,
@@ -183,7 +183,7 @@ const billingInformation = reactive({
 })
 
 createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: {
 		method: 'billing.get_information',
 		data: { timezone: browserTimezone.value },
@@ -200,7 +200,7 @@ createResource({
 })
 
 const setupIntentSuccess = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	makeParams: ({ setupIntent }) => {
 		return {
 			method: 'billing.setup_intent_success',
@@ -234,7 +234,7 @@ const setupIntentSuccess = createResource({
 })
 
 const verifyCardWithMicroCharge = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	makeParams: ({ paymentMethodName }) => {
 		return {
 			method: 'billing.create_payment_intent_for_micro_debit',

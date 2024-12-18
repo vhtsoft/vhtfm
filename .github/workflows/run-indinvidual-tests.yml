@@ -122,9 +122,9 @@ jobs:
         run: |
           bash ${GITHUB_WORKSPACE}/.github/helper/install_dependencies.sh
 
-      - name: Init Bench
+      - name: Init Fox
         run: |
-          bash ${GITHUB_WORKSPACE}/.github/helper/install_bench.sh
+          bash ${GITHUB_WORKSPACE}/.github/helper/install_fox.sh
         env:
           TYPE: server
       - name: Init Test Site
@@ -135,4 +135,4 @@ jobs:
           DB: mariadb
 
       - name: Run Tests
-        run: 'cd ~/frappe-bench/ && bench --site test_site run-tests --app frappe --module ${{ matrix.test }}'
+        run: 'cd ~/vhtfm-fox/ && fox --site test_site run-tests --app vhtfm --module ${{ matrix.test }}'

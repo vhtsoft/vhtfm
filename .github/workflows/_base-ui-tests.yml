@@ -96,13 +96,13 @@ jobs:
       - name: Site Setup
         run: |
           source ${GITHUB_WORKSPACE}/env/bin/activate
-          bench --site test_site execute frappe.utils.install.complete_setup_wizard
-          bench --site test_site execute frappe.tests.ui_test_helpers.create_test_user
+          fox --site test_site execute vhtfm.utils.install.complete_setup_wizard
+          fox --site test_site execute vhtfm.tests.ui_test_helpers.create_test_user
 
       - name: Run Tests
         run: |
           source ${GITHUB_WORKSPACE}/env/bin/activate
-          bench --site test_site \
+          fox --site test_site \
             run-ui-tests ${{ github.event.repository.name }} \
               --with-coverage \
               --headless \
@@ -136,10 +136,10 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ failure() && contains( github.event.pull_request.labels.*.name, 'debug-gha') }}
 
-      - name: Show bench output
+      - name: Show fox output
         if: ${{ always() }}
         run: |
-          cat bench_start.log || true
+          cat fox_start.log || true
           cd logs
           for f in ${GITHUB_WORKSPACE}/*.log*; do
             echo "Printing log: $f";

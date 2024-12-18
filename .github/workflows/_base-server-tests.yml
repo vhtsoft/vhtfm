@@ -106,7 +106,7 @@ jobs:
       - name: Run Tests
         run: |
           source ${GITHUB_WORKSPACE}/env/bin/activate
-          bench --site test_site \
+          fox --site test_site \
             run-parallel-tests \
             --app "${{ github.event.repository.name }}" \
             --total-builds ${{ inputs.parallel-runs }} \
@@ -133,9 +133,9 @@ jobs:
           fi
         env:
           DB: ${{ matrix.db }}
-          # consumed by bench run-parallel-tests
+          # consumed by fox run-parallel-tests
           CAPTURE_COVERAGE: ${{ inputs.enable-coverage }}
-          FRAPPE_SENTRY_DSN: ${{ secrets.SENTRY_DSN || '' }}
+          VHTFM_SENTRY_DSN: ${{ secrets.SENTRY_DSN || '' }}
 
       - name: Upload coverage data
         uses: actions/upload-artifact@v3
@@ -148,10 +148,10 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ failure() && contains( github.event.pull_request.labels.*.name, 'debug-gha') }}
 
-      - name: Show bench output
+      - name: Show fox output
         if: ${{ always() }}
         run: |
-          cat bench_start.log || true
+          cat fox_start.log || true
           cd logs
           for f in ${GITHUB_WORKSPACE}/*.log*; do
             echo "Printing log: $f";

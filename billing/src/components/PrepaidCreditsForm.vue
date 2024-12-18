@@ -83,7 +83,7 @@ import BuyCreditsStripe from './BuyCreditsStripe.vue'
 import BuyCreditsRazorpay from './BuyCreditsRazorpay.vue'
 import RazorpayLogo from '../logo/RazorpayLogo.vue'
 import StripeLogo from '../logo/StripeLogo.vue'
-import { FormControl, Button, createResource } from 'frappe-ui'
+import { FormControl, Button, createResource } from 'vhtfm-ui'
 import { ref, computed, inject } from 'vue'
 
 const emit = defineEmits(['success'])
@@ -91,7 +91,7 @@ const emit = defineEmits(['success'])
 const team = inject('team')
 
 const totalUnpaidAmount = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.total_unpaid_amount' },
 	cache: 'totalUnpaidAmount',
 	auto: true,

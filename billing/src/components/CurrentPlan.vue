@@ -115,7 +115,7 @@ import CardIcon from '../icons/CardIcon.vue'
 import UnPaidBillIcon from '../icons/UnPaidBillIcon.vue'
 import PlanDetails from './PlanDetails.vue'
 import AddPrepaidCreditsModal from './AddPrepaidCreditsModal.vue'
-import { Button, Tooltip, Spinner, FeatherIcon, createResource } from 'frappe-ui'
+import { Button, Tooltip, Spinner, FeatherIcon, createResource } from 'vhtfm-ui'
 import { calculateTrialEndDays } from '../utils.js'
 import { ref, computed, inject } from 'vue'
 import { useRouter } from 'vue-router'
@@ -150,7 +150,7 @@ const currentPlan = computed(() => {
 })
 
 const unpaidAmount = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.total_unpaid_amount' },
 	cache: 'unpaidAmount',
 	auto: true,
@@ -167,7 +167,7 @@ const currentMonthEnd = () => {
 }
 
 const unpaidInvoices = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.get_unpaid_invoices' },
 })
 
@@ -200,7 +200,7 @@ async function payUnpaidInvoices() {
 			window.open(invoice.stripe_invoice_url, '_blank')
 		} else {
 			createResource({
-				url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+				url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 				params: {
 					method: 'billing.get_stripe_payment_url_for_invoice',
 					data: { name: invoice.name },

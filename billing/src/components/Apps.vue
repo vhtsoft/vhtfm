@@ -38,21 +38,21 @@
 </template>
 <script setup>
 import AppsIcon from '@/icons/AppsIcon.vue'
-import { FeatherIcon, Popover, createResource } from 'frappe-ui'
+import { FeatherIcon, Popover, createResource } from 'vhtfm-ui'
 
 const props = defineProps({
 	active: Boolean,
 })
 
 const apps = createResource({
-	url: 'frappe.apps.get_apps',
+	url: 'vhtfm.apps.get_apps',
 	cache: 'apps',
 	auto: true,
 	transform: (data) => {
 		let _apps = [
 			{
-				name: 'frappe',
-				logo: '/assets/frappe/images/framework.png',
+				name: 'vhtfm',
+				logo: '/assets/vhtfm/images/framework.png',
 				title: 'Desk',
 				route: '/app',
 			},

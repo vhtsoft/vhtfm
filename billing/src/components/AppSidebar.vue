@@ -34,7 +34,7 @@ import Plans from '@/icons/PlansIcon.vue'
 import InvoiceIcon from '@/icons/InvoiceIcon.vue'
 import SidebarLink from '@/components/SidebarLink.vue'
 import { createDialog } from '../dialogs'
-import { call } from 'frappe-ui'
+import { call } from 'vhtfm-ui'
 import { useRouter } from 'vue-router'
 import { useStorage } from '@vueuse/core'
 import { onMounted, inject } from 'vue'
@@ -91,7 +91,7 @@ async function openSupport() {
 	await currentSiteInfo.reload()
 	if (!currentSiteInfo.data?.plan?.support_included) {
 		let supportPlan = await call(
-			'frappe.integrations.frappe_providers.frappecloud_billing.api',
+			'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 			{
 				method: 'site.get_first_support_plan',
 			}
@@ -115,6 +115,6 @@ async function openSupport() {
 		})
 		return
 	}
-	window.open('https://support.frappe.io/help', '_blank')
+	window.open('https://support.vhtfm.io/help', '_blank')
 }
 </script>

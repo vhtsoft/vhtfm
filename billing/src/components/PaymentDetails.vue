@@ -164,7 +164,7 @@ import BillingDetailsModal from './BillingDetailsModal.vue'
 import AddPrepaidCreditsModal from './AddPrepaidCreditsModal.vue'
 import AddCardModal from './AddCardModal.vue'
 import ChangeCardModal from './ChangeCardModal.vue'
-import { Dropdown, Button, FeatherIcon, createResource } from 'frappe-ui'
+import { Dropdown, Button, FeatherIcon, createResource } from 'vhtfm-ui'
 import { cardBrandIcon } from '../utils.js'
 import { computed, ref, inject, h } from 'vue'
 
@@ -179,7 +179,7 @@ const showChangeCardModal = ref(false)
 const currency = computed(() => (team.data.currency == 'INR' ? '₹' : '$'))
 
 const billingDetails = createResource({
-	url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+	url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 	params: { method: 'billing.get_information' },
 	cache: 'billingDetails',
 	auto: true,
@@ -242,7 +242,7 @@ function updatePaymentMode(mode) {
 		showAddCardModal.value = true
 	}
 	createResource({
-		url: 'frappe.integrations.frappe_providers.frappecloud_billing.api',
+		url: 'vhtfm.integrations.vhtfm_providers.vhtfmcloud_billing.api',
 		params: {
 			method: 'billing.change_payment_mode',
 			data: { mode },

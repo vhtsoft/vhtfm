@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import frappeui from 'vhtfm-ui/vite'
+import vhtfmui from 'vhtfm-ui/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		frappeui(),
+		vhtfmui(),
 		vue(),
 		{
 			name: 'transform-index.html',

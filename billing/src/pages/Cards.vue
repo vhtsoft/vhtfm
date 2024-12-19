@@ -93,7 +93,7 @@ import {
 	FeatherIcon,
 	createResource,
 	Breadcrumbs,
-} from 'frappe-ui'
+} from 'vhtfm-ui'
 import { useTimeAgo } from '@vueuse/core'
 import { createDialog } from '@/dialogs.js'
 import { cardBrandIcon } from '@/utils'

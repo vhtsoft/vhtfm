@@ -31,7 +31,7 @@
 import FCLogo from '@/logo/FCLogo.vue'
 import Apps from '@/components/Apps.vue'
 import { getSession } from '@/session.js'
-import { Dropdown, FeatherIcon } from 'frappe-ui'
+import { Dropdown, FeatherIcon } from 'vhtfm-ui'
 import { computed, ref, markRaw } from 'vue'
 import FCDashboardLoginModal from './FCDashboardLoginModal.vue'
 

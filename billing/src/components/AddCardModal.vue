@@ -18,7 +18,7 @@
 </template>
 <script setup>
 import CardForm from './CardForm.vue'
-import { Dialog, FeatherIcon } from 'frappe-ui'
+import { Dialog, FeatherIcon } from 'vhtfm-ui'
 
 const props = defineProps({
 	showMessage: {

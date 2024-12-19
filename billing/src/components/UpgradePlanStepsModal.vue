@@ -62,7 +62,7 @@ import CardForm from '@/components/CardForm.vue'
 import PrepaidCreditsForm from '@/components/PrepaidCreditsForm.vue'
 import { createDialog } from '@/dialogs'
 import { ConfirmMessage } from '@/utils'
-import { Dialog, Button, FeatherIcon, TabButtons, createResource } from 'frappe-ui'
+import { Dialog, Button, FeatherIcon, TabButtons, createResource } from 'vhtfm-ui'
 import { ref, computed, inject, markRaw, h } from 'vue'
 
 const props = defineProps({

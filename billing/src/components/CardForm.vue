@@ -81,7 +81,7 @@ import {
 	ErrorMessage,
 	createResource,
 	toast,
-} from 'frappe-ui'
+} from 'vhtfm-ui'
 import { currency } from '../utils.js'
 import { loadStripe } from '@stripe/stripe-js'
 import { ref, reactive, computed, inject, onMounted } from 'vue'

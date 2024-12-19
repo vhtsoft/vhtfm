@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vhtsoft/vhtfm.git"
+    "url": "git+https://github.com/vhtsoft/esbuild-plugin-postcss2.git"
   },
   "author": "VHTSoft Technologies Pvt. Ltd.",
   "license": "MIT",

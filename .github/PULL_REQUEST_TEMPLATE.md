@@ -12,11 +12,11 @@ Some key notes before you open a PR:
 
 Also, if you're new here
 
-- Documentation Guidelines => https://github.com/vhtfm/erpnext/wiki/Updating-Documentation
+- Documentation Guidelines => https://github.com/vhtfm/vhterp/wiki/Updating-Documentation
 
 - Contribution Guide => https://github.com/vhtfm/vhtfm/blob/develop/.github/CONTRIBUTING.md
 
-- Pull Request Checklist => https://github.com/vhtfm/erpnext/wiki/Pull-Request-Checklist
+- Pull Request Checklist => https://github.com/vhtfm/vhterp/wiki/Pull-Request-Checklist
 
 -->
 

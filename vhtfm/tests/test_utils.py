@@ -1328,18 +1328,18 @@ class TestChangeLog(IntegrationTestCase):
 		self.assertIsInstance(get_source_url("vhtfm"), str)
 
 	def test_parse_github_url(self):
-		# using erpnext as repo in order to be different from the owner
-		owner, repo = parse_github_url("https://github.com/vhtfm/erpnext.git")
+		# using vhterp as repo in order to be different from the owner
+		owner, repo = parse_github_url("https://github.com/vhtfm/vhterp.git")
 		self.assertEqual(owner, "vhtfm")
-		self.assertEqual(repo, "erpnext")
+		self.assertEqual(repo, "vhterp")
 
-		owner, repo = parse_github_url("https://github.com/vhtfm/erpnext")
+		owner, repo = parse_github_url("https://github.com/vhtfm/vhterp")
 		self.assertEqual(owner, "vhtfm")
-		self.assertEqual(repo, "erpnext")
+		self.assertEqual(repo, "vhterp")
 
-		owner, repo = parse_github_url("git@github.com:vhtfm/erpnext.git")
+		owner, repo = parse_github_url("git@github.com:vhtfm/vhterp.git")
 		self.assertEqual(owner, "vhtfm")
-		self.assertEqual(repo, "erpnext")
+		self.assertEqual(repo, "vhterp")
 
 		owner, repo = parse_github_url("https://gitlab.com/gitlab-org/gitlab")
 		self.assertIsNone(owner)

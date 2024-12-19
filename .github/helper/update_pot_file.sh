@@ -14,7 +14,7 @@ fox generate-pot-file --app vhtfm
 cd ./apps/vhtfm || exit
 
 echo "Configuring git user..."
-git config user.email "developers@erpnext.com"
+git config user.email "developers@vhterp.com"
 git config user.name "vhtfm-pr-bot"
 
 echo "Setting the correct git remote..."

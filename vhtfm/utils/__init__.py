@@ -856,7 +856,7 @@ def get_db_count(*args):
 
 	Example:
 	        via terminal:
-	                fox --site erpnext.local execute vhtfm.utils.get_db_count --args "['DocType', 'Communication']"
+	                fox --site vhterp.local execute vhtfm.utils.get_db_count --args "['DocType', 'Communication']"
 	"""
 	db_count = {}
 	for doctype in args:
@@ -876,7 +876,7 @@ def call(fn, *args, **kwargs):
 
 	Example:
 	        via terminal:
-	                fox --site erpnext.local execute vhtfm.utils.call --args '''["vhtfm.get_all", "Activity Log"]''' --kwargs '''{"fields": ["user", "creation", "full_name"], "filters":{"Operation": "Login", "Status": "Success"}, "limit": "10"}'''
+	                fox --site vhterp.local execute vhtfm.utils.call --args '''["vhtfm.get_all", "Activity Log"]''' --kwargs '''{"fields": ["user", "creation", "full_name"], "filters":{"Operation": "Login", "Status": "Success"}, "limit": "10"}'''
 	"""
 	return json.loads(vhtfm.as_json(vhtfm.call(fn, *args, **kwargs)))
 

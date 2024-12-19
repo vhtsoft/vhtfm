@@ -120,9 +120,9 @@ To setup the repository locally follow the steps mentioned below:
 
 ## Contributing
 
-1. [Issue Guidelines](https://github.com/vhtfm/erpnext/wiki/Issue-Guidelines)
+1. [Issue Guidelines](https://github.com/vhtfm/vhterp/wiki/Issue-Guidelines)
 1. [Report Security Vulnerabilities](https://vhtfm.io/security)
-1. [Pull Request Requirements](https://github.com/vhtfm/erpnext/wiki/Contribution-Guidelines)
+1. [Pull Request Requirements](https://github.com/vhtfm/vhterp/wiki/Contribution-Guidelines)
 
 <br>
 <br>

@@ -11023,8 +11023,8 @@ msgid "Error Message"
 msgstr "Foutmelding"
 
 #: public/js/vhtfm/form/print_utils.js:126
-msgid "Error connecting to QZ Tray Application...<br><br> You need to have QZ Tray application installed and running, to use the Raw Print feature.<br><br><a target=\"_blank\" href=\"https://qz.io/download/\">Click here to Download and install QZ Tray</a>.<br> <a target=\"_blank\" href=\"https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing\">Click here to learn more about Raw Printing</a>."
-msgstr "Fout bij verbinding maken met QZ-ladetoepassing ... <br><br> De toepassing QZ-lade moet zijn geïnstalleerd en actief zijn om de functie Raw Print te kunnen gebruiken. <br><br> <a href=\"https://qz.io/download/\" target=\"_blank\">Klik hier om de QZ-lade te downloaden en te installeren</a> . <br> <a href=\"https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing\" target=\"_blank\">Klik hier voor meer informatie over Raw Printing</a> ."
+msgid "Error connecting to QZ Tray Application...<br><br> You need to have QZ Tray application installed and running, to use the Raw Print feature.<br><br><a target=\"_blank\" href=\"https://qz.io/download/\">Click here to Download and install QZ Tray</a>.<br> <a target=\"_blank\" href=\"https://vhterp.com/docs/user/manual/en/setting-up/print/raw-printing\">Click here to learn more about Raw Printing</a>."
+msgstr "Fout bij verbinding maken met QZ-ladetoepassing ... <br><br> De toepassing QZ-lade moet zijn geïnstalleerd en actief zijn om de functie Raw Print te kunnen gebruiken. <br><br> <a href=\"https://qz.io/download/\" target=\"_blank\">Klik hier om de QZ-lade te downloaden en te installeren</a> . <br> <a href=\"https://vhterp.com/docs/user/manual/en/setting-up/print/raw-printing\" target=\"_blank\">Klik hier voor meer informatie over Raw Printing</a> ."
 
 #: email/doctype/email_domain/email_domain.py:32
 msgid "Error connecting via IMAP/POP3: {e}"
@@ -12708,8 +12708,8 @@ msgstr "Zie <a href=\"https://vhtfmframework.com/docs/user/en/guides/portal-deve
 #. DocType 'Email Account'
 #: email/doctype/email_account/email_account.json
 msgctxt "Email Account"
-msgid "For more information, <a class=\"text-muted\" href=\"https://erpnext.com/docs/user/manual/en/setting-up/email/linking-emails-to-document\">click here</a>."
-msgstr "<a class=\"text-muted\" href=\"https://erpnext.com/docs/user/manual/en/setting-up/email/linking-emails-to-document\">Klik hier</a> voor meer informatie."
+msgid "For more information, <a class=\"text-muted\" href=\"https://vhterp.com/docs/user/manual/en/setting-up/email/linking-emails-to-document\">click here</a>."
+msgstr "<a class=\"text-muted\" href=\"https://vhterp.com/docs/user/manual/en/setting-up/email/linking-emails-to-document\">Klik hier</a> voor meer informatie."
 
 #: integrations/doctype/google_settings/google_settings.js:7
 msgid "For more information, {0}."
@@ -29518,8 +29518,8 @@ msgstr "Sub-valuta. Voor bijvoorbeeld &quot;Cent&quot;"
 #. Settings'
 #: website/doctype/website_settings/website_settings.json
 msgctxt "Website Settings"
-msgid "Sub-domain provided by erpnext.com"
-msgstr "Subdomein aangeleverd door erpnext.com"
+msgid "Sub-domain provided by vhterp.com"
+msgstr "Subdomein aangeleverd door vhterp.com"
 
 #. Label of a Small Text field in DocType 'Website Settings'
 #: website/doctype/website_settings/website_settings.json

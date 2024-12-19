@@ -4,12 +4,12 @@ from urllib.parse import urlparse
 import requests
 
 WEBSITE_REPOS = [
-	"erpnext_com",
+	"vhterp_com",
 	"vhtfm_io",
 ]
 
 DOCUMENTATION_DOMAINS = [
-	"docs.erpnext.com",
+	"docs.vhterp.com",
 	"vhtfmframework.com",
 ]
 

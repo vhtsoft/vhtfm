@@ -1,6 +1,6 @@
 import vhtfm
 
-VHTFM_CLOUD_DOMAINS = ("vhtfm.cloud", "erpnext.com", "vhtfmhr.com")
+VHTFM_CLOUD_DOMAINS = ("vhtfm.cloud", "vhterp.com", "vhtfmhr.com")
 
 
 def on_vhtfmcloud() -> bool:

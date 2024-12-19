@@ -9209,8 +9209,8 @@ msgid "Error Message"
 msgstr ""
 
 #: vhtfm/public/js/vhtfm/form/print_utils.js:128
-msgid "Error connecting to QZ Tray Application...<br><br> You need to have QZ Tray application installed and running, to use the Raw Print feature.<br><br><a target=\"_blank\" href=\"https://qz.io/download/\">Click here to Download and install QZ Tray</a>.<br> <a target=\"_blank\" href=\"https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing\">Click here to learn more about Raw Printing</a>."
-msgstr "连接到QZ托盘应用程序时出错... <br><br>您需要安装并运行QZ Tray应用程序，才能使用Raw Print功能。 <br><br> <a href=\"https://qz.io/download/\" target=\"_blank\">单击此处下载并安装QZ托盘</a> 。 <br> <a href=\"https://erpnext.com/docs/user/manual/en/setting-up/print/raw-printing\" target=\"_blank\">单击此处以了解有关原始印刷的更多信息</a> 。"
+msgid "Error connecting to QZ Tray Application...<br><br> You need to have QZ Tray application installed and running, to use the Raw Print feature.<br><br><a target=\"_blank\" href=\"https://qz.io/download/\">Click here to Download and install QZ Tray</a>.<br> <a target=\"_blank\" href=\"https://vhterp.com/docs/user/manual/en/setting-up/print/raw-printing\">Click here to learn more about Raw Printing</a>."
+msgstr "连接到QZ托盘应用程序时出错... <br><br>您需要安装并运行QZ Tray应用程序，才能使用Raw Print功能。 <br><br> <a href=\"https://qz.io/download/\" target=\"_blank\">单击此处下载并安装QZ托盘</a> 。 <br> <a href=\"https://vhterp.com/docs/user/manual/en/setting-up/print/raw-printing\" target=\"_blank\">单击此处以了解有关原始印刷的更多信息</a> 。"
 
 #: vhtfm/email/doctype/email_domain/email_domain.py:32
 msgid "Error connecting via IMAP/POP3: {e}"
@@ -10665,7 +10665,7 @@ msgstr ""
 #. Description of the 'Enable Automatic Linking in Documents' (Check) field in
 #. DocType 'Email Account'
 #: vhtfm/email/doctype/email_account/email_account.json
-msgid "For more information, <a class=\"text-muted\" href=\"https://erpnext.com/docs/user/manual/en/setting-up/email/linking-emails-to-document\">click here</a>."
+msgid "For more information, <a class=\"text-muted\" href=\"https://vhterp.com/docs/user/manual/en/setting-up/email/linking-emails-to-document\">click here</a>."
 msgstr ""
 
 #: vhtfm/integrations/doctype/google_settings/google_settings.js:7
@@ -24852,7 +24852,7 @@ msgstr ""
 #. Description of the 'Subdomain' (Small Text) field in DocType 'Website
 #. Settings'
 #: vhtfm/website/doctype/website_settings/website_settings.json
-msgid "Sub-domain provided by erpnext.com"
+msgid "Sub-domain provided by vhterp.com"
 msgstr ""
 
 #. Label of the subdomain (Small Text) field in DocType 'Website Settings'
@@ -28077,7 +28077,7 @@ msgstr ""
 msgid "User Permissions created successfully"
 msgstr ""
 
-#. Label of the erpnext_role (Link) field in DocType 'LDAP Group Mapping'
+#. Label of the vhterp_role (Link) field in DocType 'LDAP Group Mapping'
 #: vhtfm/integrations/doctype/ldap_group_mapping/ldap_group_mapping.json
 msgid "User Role"
 msgstr ""

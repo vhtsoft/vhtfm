@@ -78,7 +78,7 @@ const createPaymentIntent = createResource({
 		data: { amount: props.amount },
 	},
 	validate() {
-		if (props.amount < props.minimumAmount && !team.data.erpnext_partner) {
+		if (props.amount < props.minimumAmount && !team.data.vhterp_partner) {
 			return `Amount must be greater than or equal to ${props.minimumAmount}`
 		}
 	},

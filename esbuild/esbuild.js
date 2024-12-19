@@ -68,7 +68,7 @@ const argv = yargs
 		description:
 			"Skips build and uses cached build artifacts to update assets.json (used by Fox)",
 	})
-	.example("node esbuild --apps vhtfm,erpnext", "Run build only for vhtfm and erpnext")
+	.example("node esbuild --apps vhtfm,vhterp", "Run build only for vhtfm and vhterp")
 	.example(
 		"node esbuild --files vhtfm/website.bundle.js,vhtfm/desk.bundle.js",
 		"Run build only for specified bundles"
@@ -265,7 +265,7 @@ function get_all_files_to_build(apps) {
 }
 
 function get_files_to_build(files) {
-	// files: ['vhtfm/website.bundle.js', 'erpnext/main.bundle.js']
+	// files: ['vhtfm/website.bundle.js', 'vhterp/main.bundle.js']
 	let include_patterns = [];
 	let ignore_patterns = [];
 

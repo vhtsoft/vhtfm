@@ -8,7 +8,7 @@ Please post on our forums:
 
 for questions about using the `Vhtfm Framework`: ~~https://discuss.vhtfm.io~~ => [stackoverflow](https://stackoverflow.com/questions/tagged/vhtfm) tagged under `vhtfm`
 
-for questions about using `ERPNext`: https://discuss.erpnext.com
+for questions about using `ERPNext`: https://discuss.vhterp.com
 
 for questions about using `fox`, probably the best place to start is the [fox repo](https://github.com/vhtfm/fox)
 

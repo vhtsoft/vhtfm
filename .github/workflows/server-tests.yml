@@ -88,7 +88,7 @@ jobs:
     strategy:
       matrix:
         repo:
-          - vhtfm/erpnext
+          - vhtfm/vhterp
           - vhtfm/lending
           - vhtfm/hrms
     steps:

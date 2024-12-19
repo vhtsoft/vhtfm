@@ -17,7 +17,7 @@ if TYPE_CHECKING:
 	from vhtfm.integrations.doctype.social_login_key.social_login_key import SocialLoginKey
 
 
-class FrappeRequestTestCase(IntegrationTestCase):
+class VhtfmRequestTestCase(IntegrationTestCase):
 	@property
 	def sid(self) -> str:
 		if not getattr(self, "_sid", None):
@@ -51,7 +51,7 @@ class FrappeRequestTestCase(IntegrationTestCase):
 		return make_request(target=self.TEST_CLIENT.delete, args=(path,), kwargs=kwargs, site=self.site)
 
 
-class TestOAuth20(FrappeRequestTestCase):
+class TestOAuth20(VhtfmRequestTestCase):
 	site = vhtfm.local.site
 
 	@classmethod
@@ -372,7 +372,7 @@ class TestOAuth20(FrappeRequestTestCase):
 		)
 
 
-def check_valid_openid_response(access_token=None, client: "FrappeRequestTestCase" = None):
+def check_valid_openid_response(access_token=None, client: "VhtfmRequestTestCase" = None):
 	"""Return True for valid response."""
 	# Use token in header
 	headers = {}

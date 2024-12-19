@@ -12,7 +12,7 @@ function vhtfm_handlers(socket) {
 	socket.has_permission = (doctype, name) => {
 		return new Promise((resolve) => {
 			socket
-				.frappe_request("/api/method/vhtfm.realtime.has_permission", {
+				.vhtfm_request("/api/method/vhtfm.realtime.has_permission", {
 					doctype,
 					name: name || "",
 				})

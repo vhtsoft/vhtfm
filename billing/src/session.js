@@ -1,4 +1,4 @@
-import { createResource } from 'frappe-ui'
+import { createResource } from 'vhtfm-ui'
 import router from '@/router'
 import { ref, computed } from 'vue'
 

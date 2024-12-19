@@ -1,6 +1,6 @@
 // Copyright (c) 2018, Vhtfm Technologies Pvt. Ltd. and Contributors
 // MIT License. See license.txt
-import DataTable from "frappe-datatable";
+import DataTable from "vhtfm-datatable";
 
 // Expose DataTable globally to allow customizations.
 window.DataTable = DataTable;

@@ -543,7 +543,7 @@ vhtfm.request.report_error = function (xhr, request_opts) {
 		const code_block = (snippet) => "```\n" + snippet + "\n```";
 
 		let request_data = Object.assign({}, request_opts);
-		request_data.request_id = xhr.getResponseHeader("X-Frappe-Request-Id");
+		request_data.request_id = xhr.getResponseHeader("X-Vhtfm-Request-Id");
 		const traceback_info = [
 			"### App Versions",
 			code_block(JSON.stringify(vhtfm.boot.versions, null, "\t")),

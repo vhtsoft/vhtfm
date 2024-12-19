@@ -34,7 +34,7 @@
 	</div>
 </template>
 <script setup>
-import { Button, ErrorMessage, FeatherIcon, createResource, toast } from 'frappe-ui'
+import { Button, ErrorMessage, FeatherIcon, createResource, toast } from 'vhtfm-ui'
 import { ref, onMounted, onBeforeUnmount, inject } from 'vue'
 
 const props = defineProps({

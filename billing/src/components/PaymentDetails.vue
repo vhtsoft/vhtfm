@@ -164,7 +164,7 @@ import BillingDetailsModal from './BillingDetailsModal.vue'
 import AddPrepaidCreditsModal from './AddPrepaidCreditsModal.vue'
 import AddCardModal from './AddCardModal.vue'
 import ChangeCardModal from './ChangeCardModal.vue'
-import { Dropdown, Button, FeatherIcon, createResource } from 'frappe-ui'
+import { Dropdown, Button, FeatherIcon, createResource } from 'vhtfm-ui'
 import { cardBrandIcon } from '../utils.js'
 import { computed, ref, inject, h } from 'vue'
 

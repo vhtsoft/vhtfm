@@ -96,7 +96,7 @@ def update_user_status(value, step):
 
 	capture(
 		vhtfm.scrub(f"{step.parent}_{step.title}"),
-		app="frappe_ui_tours",
+		app="vhtfm_ui_tours",
 		properties={"is_completed": tour.is_completed},
 	)
 	vhtfm.db.set_value("User", vhtfm.session.user, "onboarding_status", value, update_modified=False)

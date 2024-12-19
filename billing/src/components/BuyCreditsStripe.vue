@@ -39,7 +39,7 @@
 	</div>
 </template>
 <script setup>
-import { Button, ErrorMessage, Spinner, createResource, toast } from 'frappe-ui'
+import { Button, ErrorMessage, Spinner, createResource, toast } from 'vhtfm-ui'
 import { loadStripe } from '@stripe/stripe-js'
 import { ref, nextTick, inject } from 'vue'
 

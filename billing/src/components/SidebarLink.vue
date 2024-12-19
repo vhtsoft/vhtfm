@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import { FeatherIcon } from 'vhtfm-ui'
+import { FeatherIcon } from 'frappe-ui'
 import { computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 

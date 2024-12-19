@@ -72,7 +72,7 @@
 </template>
 <script setup>
 import { createDialog } from '../dialogs.js'
-import { Dropdown, Badge, Dialog, Button, FeatherIcon, createResource } from 'vhtfm-ui'
+import { Dropdown, Badge, Dialog, Button, FeatherIcon, createResource } from 'frappe-ui'
 import { cardBrandIcon } from '../utils.js'
 import { ref } from 'vue'
 

@@ -67,7 +67,7 @@
 </template>
 
 <script setup>
-import { Button, Dialog, FormControl, ErrorMessage, createResource } from 'vhtfm-ui'
+import { Button, Dialog, FormControl, ErrorMessage, createResource } from 'frappe-ui'
 import { ref, computed, inject } from 'vue'
 
 const show = defineModel()

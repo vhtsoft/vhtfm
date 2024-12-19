@@ -66,7 +66,7 @@ import {
 	Badge,
 	createResource,
 	Breadcrumbs,
-} from 'vhtfm-ui'
+} from 'frappe-ui'
 import { computed, inject } from 'vue'
 
 const team = inject('team')

@@ -73,7 +73,7 @@ class Monitor:
 			}
 		)
 
-		if request_id := vhtfm.request.headers.get("X-Vhtfm-Request-Id"):
+		if request_id := vhtfm.request.headers.get("X-Frappe-Request-Id"):
 			self.data.uuid = request_id
 
 	def collect_job_meta(self, method, kwargs):

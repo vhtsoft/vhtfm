@@ -1,7 +1,7 @@
 /**
  * vhtfm.views.ReportView
  */
-import DataTable from "vhtfm-datatable";
+import DataTable from "frappe-datatable";
 
 window.DataTable = DataTable;
 vhtfm.provide("vhtfm.views");

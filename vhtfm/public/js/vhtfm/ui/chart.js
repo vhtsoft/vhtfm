@@ -1,4 +1,4 @@
-import { Chart } from "vhtfm-charts/dist/vhtfm-charts.esm";
+import { Chart } from "frappe-charts/dist/frappe-charts.esm";
 
 vhtfm.provide("vhtfm.ui");
 vhtfm.Chart = Chart;

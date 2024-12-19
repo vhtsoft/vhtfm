@@ -266,7 +266,7 @@ def process_response(response):
 		response.headers.extend(vhtfm.local.rate_limiter.headers())
 
 	if trace_id := vhtfm.monitor.get_trace_id():
-		response.headers.extend({"X-Vhtfm-Request-Id": trace_id})
+		response.headers.extend({"X-Frappe-Request-Id": trace_id})
 
 	# CORS headers
 	if hasattr(vhtfm.local, "conf"):

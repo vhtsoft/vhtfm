@@ -54,7 +54,7 @@
     "fast-glob": "^3.2.5",
     "vhtfm-charts": "1.6.3",
     "vhtfm-datatable": "1.17.16",
-    "vhtfm-gantt": "^0.6.0",
+    "vhtfm-gantt": "^0.9.0",
     "highlight.js": "^10.4.1",
     "html5-qrcode": "^2.3.8",
     "jquery": "3.7.0",

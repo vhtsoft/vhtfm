@@ -1499,10 +1499,6 @@ vhtfm-datatable@1.0.0:
     lodash "^4.17.5"
     sortablejs "^1.7.0"
 
-vhtfm-gantt@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/vhtfm-gantt/-/vhtfm-gantt-0.9.0.tgz#57ae0b5f024101fc7cd5ba92f605de97dba9c9a1"
-  integrity sha512-1cSU9vLbwypjzaxnCfnEE03Xr3HlAV2S8dRtjxw62o+amkx1A8bBIFd2jp84mcDdTCM77Ij4LzZBslAKZB8oMg==
 
 fs-exists-sync@^0.1.0:
   version "0.1.0"

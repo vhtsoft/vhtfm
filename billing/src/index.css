@@ -1,5 +1,5 @@
 @import './assets/Inter/inter.css';
-@import 'vhtfm-ui/src/style.css';
+@import 'vhtfm-uif/src/style.css';
 
 @layer components {
 	.prose-f {

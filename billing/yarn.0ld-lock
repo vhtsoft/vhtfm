@@ -1051,9 +1051,9 @@ fraction.js@^4.3.7:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.3.7.tgz#06ca0085157e42fda7f9e726e79fefc4068840f7"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
-vhtfm-ui@^v0.1.72:
+vhtfm-uif@^v0.1.72:
   version "0.1.72"
-  resolved "https://registry.yarnpkg.com/vhtfm-ui/-/vhtfm-ui-0.1.72.tgz#f5550056ddee7ad4341f2c1825d046404d221820"
+  resolved "https://registry.yarnpkg.com/vhtfm-uif/-/vhtfm-uif-0.1.72.tgz#f5550056ddee7ad4341f2c1825d046404d221820"
   integrity sha512-XWYKmCjw3ViD+/+tZMUiYqwHFlMGMsVuazOYiN5bKlE+aiheJsnHlOOUyQswYX1Y7jNxuC7gGpSLNg2ZpXA7hA==
   dependencies:
     "@headlessui/vue" "^1.7.14"

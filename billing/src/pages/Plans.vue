@@ -84,7 +84,7 @@ import {
 	Tooltip,
 	createResource,
 	Breadcrumbs,
-} from 'vhtfm-ui'
+} from 'vhtfm-uif'
 import { createDialog } from '@/dialogs'
 import { parseSize, ConfirmMessage } from '@/utils'
 import { ref, computed, provide, inject, markRaw, h } from 'vue'

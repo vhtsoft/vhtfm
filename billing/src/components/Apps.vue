@@ -38,7 +38,7 @@
 </template>
 <script setup>
 import AppsIcon from '@/icons/AppsIcon.vue'
-import { FeatherIcon, Popover, createResource } from 'vhtfm-ui'
+import { FeatherIcon, Popover, createResource } from 'vhtfm-uif'
 
 const props = defineProps({
 	active: Boolean,

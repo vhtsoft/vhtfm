@@ -4,7 +4,7 @@ import Amex from './logo/Amex.vue'
 import JCB from './logo/JCB.vue'
 import UnionPay from './logo/UnionPay.vue'
 import Generic from './logo/Generic.vue'
-import { FeatherIcon } from 'vhtfm-ui'
+import { FeatherIcon } from 'vhtfm-uif'
 import { h } from 'vue'
 
 export function calculateTrialEndDays(trialEndDate) {

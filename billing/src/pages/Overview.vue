@@ -13,7 +13,7 @@
 <script setup>
 import CurrentPlan from '@/components/CurrentPlan.vue'
 import PaymentDetails from '@/components/PaymentDetails.vue'
-import { Spinner, createResource, Breadcrumbs } from 'vhtfm-ui'
+import { Spinner, createResource, Breadcrumbs } from 'vhtfm-uif'
 import { useRouter } from 'vue-router'
 import { computed, provide, inject } from 'vue'
 

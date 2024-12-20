@@ -19,7 +19,7 @@
 </template>
 <script setup>
 import BillingDetails from './BillingDetails.vue'
-import { FeatherIcon, Dialog } from 'vhtfm-ui'
+import { FeatherIcon, Dialog } from 'vhtfm-uif'
 import { ref } from 'vue'
 
 const props = defineProps({

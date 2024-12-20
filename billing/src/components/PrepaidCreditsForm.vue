@@ -83,7 +83,7 @@ import BuyCreditsStripe from './BuyCreditsStripe.vue'
 import BuyCreditsRazorpay from './BuyCreditsRazorpay.vue'
 import RazorpayLogo from '../logo/RazorpayLogo.vue'
 import StripeLogo from '../logo/StripeLogo.vue'
-import { FormControl, Button, createResource } from 'vhtfm-ui'
+import { FormControl, Button, createResource } from 'vhtfm-uif'
 import { ref, computed, inject } from 'vue'
 
 const emit = defineEmits(['success'])

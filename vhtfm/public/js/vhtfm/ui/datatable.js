@@ -1,3 +1,3 @@
-import DataTable from "frappe-datatable";
+import DataTable from "vhtfm-datatable";
 
 vhtfm.DataTable = DataTable;

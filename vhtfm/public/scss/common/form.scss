@@ -2,7 +2,7 @@
 	border: none;
 	height: var(--input-height);
 	@include get_textstyle("base", "regular");
-	border-radius: var(--border-radius-sm);
+	border-radius: var(--border-radius-tiny);
 	padding: var(--input-padding);
 	position: relative;
 }

@@ -1,7 +1,8 @@
 .navbar {
 	height: $navbar-height;
 	background: var(--navbar-bg);
-	border-bottom: 1px solid var(--border-color);
+	background-image: var(--bg-gradient);
+	background-repeat: no-repeat;
 	padding: 0;
 	.navbar-brand {
 		margin-right: 15px;
@@ -10,7 +11,7 @@
 	@include media-breakpoint-up(md) {
 		.navbar-brand {
 			// not shown for full screen
-			display: none;
+			// display: none;
 		}
 	}
 
@@ -21,6 +22,19 @@
 
 		.nav-link {
 			padding: 0;
+		}
+		.notifications-seen{
+			.es-icon{
+				fill: white;
+			}
+		}
+		.dropdown-help{
+			span{
+				color: white;
+				.es-icon{
+					fill: white;
+				}
+			}
 		}
 	}
 	.container {
@@ -81,7 +95,7 @@
 		ul {
 			border: none;
 			border-top: 1px solid var(--border-color);
-			border-radius: 0 0 var(--border-radius) var(--border-radius);
+			border-radius: 0 0 var(--border-radius-tiny) var(--border-radius-tiny);
 			box-shadow: var(--awesomebar-shadow);
 		}
 		input::placeholder {

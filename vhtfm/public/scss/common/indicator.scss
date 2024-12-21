@@ -5,19 +5,24 @@
 	display: inline-flex;
 	align-items: center;
 }
-
+.indicator-pill{
+	&.blue{
+		color: white !important;
+		background-color: var(--btn-primary)  !important;
+	}
+}
 .indicator::before {
 	content: "";
 	height: 8px;
 	width: 8px;
-	border-radius: var(--border-radius);
+	border-radius: var(--border-radius-tiny);
 	margin: 0px 8px 0px 0px;
 }
 .indicator-pill,
 .indicator-pill-right {
 	@include get_textstyle("sm", "regular");
 	padding: 4.5px 8px;
-	border-radius: var(--border-radius-full);
+	border-radius: var(--border-radius-tiny);
 	height: 20px;
 }
 

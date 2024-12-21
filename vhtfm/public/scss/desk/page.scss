@@ -50,13 +50,18 @@
 		}
 	}
 }
-
+.modal-backdrop{
+	z-index: 1140 !important;
+}
+.modal{
+	z-index: 1150 !important;
+}
 .page-container {
 	background-color: var(--bg-color);
 
 	.page-body {
 		width: 100%;
-		padding: 0px;
+		padding: 0 0 0 50px;
 	}
 }
 
@@ -65,7 +70,7 @@
 	.btn {
 		height: var(--btn-height);
 		margin-left: var(--margin-sm, 8px);
-		border-radius: var(--border-radius);
+		border-radius: var(--border-radius-tiny);
 		line-height: 1;
 		padding: 4px 8px;
 		&,
@@ -110,6 +115,7 @@
 	background: var(--bg-color);
 	border-bottom: 1px solid var(--border-color);
 	transition: 0.5s top;
+	padding:0 0 0 50px;
 
 	.page-head-content {
 		height: var(--page-head-height);
@@ -178,7 +184,7 @@
 
 .layout-main-section {
 	scroll-margin-top: var(--navbar-height);
-
+	// padding: var(--padding-xs) var(--padding-md);
 	.vhtfm-list,
 	.report-wrapper {
 		.result,

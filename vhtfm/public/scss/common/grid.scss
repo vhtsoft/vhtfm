@@ -1,6 +1,6 @@
 .form-grid {
 	border: 1px solid var(--table-border-color);
-	border-radius: var(--border-radius-md);
+	border-radius: var(--border-radius-tiny);
 	color: var(--text-color);
 	min-height: 150px;
 	background-color: var(--subtle-accent);
@@ -16,13 +16,13 @@
 	@include get_textstyle("sm", "regular");
 	height: 32px;
 	padding: 0 !important;
-	border-top-left-radius: var(--border-radius-md);
-	border-top-right-radius: var(--border-radius-md);
+	border-top-left-radius: var(--border-radius-tiny);
+	border-top-right-radius: var(--border-radius-tiny);
 
 	.grid-row {
 		background-color: var(--subtle-fg);
-		border-top-left-radius: var(--border-radius-md);
-		border-top-right-radius: var(--border-radius-md);
+		border-top-left-radius: var(--border-radius-tiny);
+		border-top-right-radius: var(--border-radius-tiny);
 	}
 
 	&.with-filter {
@@ -209,8 +209,8 @@
 
 .grid-body {
 	background-color: var(--subtle-accent);
-	border-bottom-left-radius: var(--border-radius);
-	border-bottom-right-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius-tiny);
+	border-bottom-right-radius: var(--border-radius-tiny);
 	margin-bottom: -1px; // double bottom border
 
 	.col:last-child {
@@ -352,8 +352,8 @@
 	@include transition(0.2s);
 	// REDESIGN TODO: Fix border bottom for last item
 	&:last-child {
-		border-bottom-left-radius: var(--border-radius);
-		border-bottom-right-radius: var(--border-radius);
+		border-bottom-left-radius: var(--border-radius-tiny);
+		border-bottom-right-radius: var(--border-radius-tiny);
 	}
 
 	td {
@@ -395,7 +395,7 @@
 	height: 0;
 	opacity: 0;
 	z-index: 1021;
-	border-radius: var(--border-radius-md);
+	border-radius: var(--border-radius-tiny);
 	@include base-grid();
 
 	.panel-title {
@@ -599,8 +599,8 @@
 }
 .column-limit-reached {
 	background-color: var(--subtle-accent);
-	border-top-left-radius: var(--border-radius-md);
-	border-top-right-radius: var(--border-radius-md);
+	border-top-left-radius: var(--border-radius-tiny);
+	border-top-right-radius: var(--border-radius-tiny);
 	.form-grid {
 		display: grid;
 		grid-auto-rows: min-content;

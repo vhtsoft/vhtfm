@@ -113,7 +113,7 @@ $card-spacer-y: 0.5rem !default;
 
 $link-hover-color: var(--text-color);
 
-$dropdown-border-radius: 0.375rem !default;
+$dropdown-border-radius: var(--border-radius-tiny) !default;
 $dropdown-item-padding-y: var(--padding-sm);
 $dropdown-item-padding-x: var(--padding-sm);
 

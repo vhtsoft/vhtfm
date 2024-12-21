@@ -50,11 +50,12 @@ body {
 	overflow-y: visible;
 }
 .body-sidebar-container {
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	height: fit-content;
 	width: fit-content;
-
+	z-index: 1100;
 	.body-sidebar-placeholder {
 		display: none;
 		width: 50px;
@@ -64,14 +65,27 @@ body {
 
 .body-sidebar {
 	width: 50px;
-	background: var(--subtle-accent);
-	border-right: 1px solid var(--dark-border-color);
+	background: var(--bg-blue-light);
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100vh;
-	z-index: 1030;
+	z-index: 1000;
+	margin-top: 48px;
+
+	.icon, .es-icon{
+		stroke: white;
+	}
+	.es-icon{
+		fill: white;
+	}
+	a{
+		.sidebar-item-label{
+			color: white;
+		}
+	}
+	
 
 	.body-sidebar-top {
 		display: flex;
@@ -113,7 +127,7 @@ body {
 		}
 
 		&:first-child {
-			margin-top: 24px;
+			// margin-top: 24px;
 		}
 	}
 
